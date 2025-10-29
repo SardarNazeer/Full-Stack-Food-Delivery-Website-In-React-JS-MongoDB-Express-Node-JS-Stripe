@@ -28,6 +28,7 @@ connectDB();
 // api endpoints
 
 app.use("/api/food",foodRouter);
+app.use("/images",express.static('uploads'));
 
 // mongoose
 //   .connect(process.env.MONGO_URI, {
